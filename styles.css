@@ -1,0 +1,343 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo {
+    margin-right: 50px;
+    width: 110px; 
+    height: auto; 
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensure the navbar is above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+.nav-links {
+    display: flex;
+}
+.navbar a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    padding: 14px 20px;
+}
+.navbar a:hover {
+    background-color: #75a8d1;
+    border-radius: 5px;
+}
+.hero {
+    position: relative;
+    background-image: url('home ext.jpg');
+    background-size: cover;
+    background-position: top;
+    color: white;
+    text-align: center;
+    padding: 250px 50px;
+    
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+.hero h1, .hero p {
+    position: relative;
+    z-index: 2;
+}
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+}
+.hero p {
+    font-size: 20px;
+    margin: 10px 0 0;
+}
+.about, .services, .projects,.contact-form {
+    padding: 70px 20px;
+    text-align: center;
+}
+.about h2, .services h2, .projects h2, .contact-form h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #244A91;
+}
+.about-container {
+background: white;
+box-shadow: 0 4px 8px white; /* Change this to your desired shadow color */
+padding: 2px; /* Increased padding to add height */
+
+border: 1px solid #75a8d1; /* Optional: Add a border for more defined edges */
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: 0 auto; /* Center the container within its parent */
+max-width: 1200px; /* Adjust the maximum width as needed */
+min-height: 100px; /* Set a minimum height as needed */
+}
+
+div {
+text-align: justify;
+text-justify: inter-word;
+}
+
+.about-content {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-family: "arial", sans-serif;
+font-size: 17px;
+width: 100%; /* Ensure the content takes the full width of the container */
+}
+
+.about-text, .about-image {
+flex: 1;
+padding: 40px; /* Increased padding to add height */
+max-width: 50%; /* Ensure the text and image each take up to 50% of the container's width */
+line-height: 1.5; /* Adjust this value to increase line spacing */
+}
+
+.about-image img {
+width: 100%;
+border-radius: 5px;
+}
+
+.services, .services h2, .services h3 {
+font-family: "calibri", sans-serif;
+}
+
+.service-container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+background: white;
+padding: 1px;
+border: 1px solid #75a8d1; /* Optional: Add a border for more defined edges */
+margin: 0 auto; /* Center the container within its parent */
+max-width: 1200px; /* Adjust the maximum width as needed */
+min-height: 100px; /* Set a minimum height as needed */
+}
+
+.service-item {
+display: flex;
+flex: 0 0 100%;
+text-align: left; /* Center text horizontally */
+margin: 20px;
+/*justify-content: center; /* Center the items horizontally */
+align-items: center; /* Center the items vertically */
+
+}
+
+.service-content {
+flex: 2; /* Increase the flex value to make it take more space */
+padding: 20px;
+font-family: "arial", sans-serif;
+font-size: 17px;
+
+}
+
+
+.service-item h3 {
+font-size: 24px;
+margin-bottom: 10px;
+margin-top: -10px; /* Adjust this value as needed to move the heading up */
+}
+
+.service-text {
+flex: 2;
+padding: 1px;
+line-height: 1.5; /* Adjust this value to increase line spacing */
+justify-content: center;
+}
+
+.service-image {
+flex: 1; /* Decrease the flex value to make it take less space */
+text-align: center; /* Center the text horizontally */
+margin-right: 20px;
+}
+
+.service-image img {
+width: 90%; /* Increase the width to make the image larger */
+height: auto;
+border-radius: 5px; /* Adjust the image border radius as needed */
+}
+.project-container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+background: white;
+padding: 1px;
+border: 1px solid #75a8d1; /* Optional: Add a border for more defined edges */
+margin: 0 auto; /* Center the container within its parent */
+max-width: 1200px; /* Adjust the maximum width as needed */
+min-height: 100px; /* Set a minimum height as needed */
+
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+}
+.project-item {
+    flex: 0 0 30%;
+    margin: 10px;
+    text-align: center;
+    font-family: "arial", sans-serif;
+    font-size: 17px;
+}
+.project-item img {
+    width: 80%;
+    border-radius: 5px;
+}
+.project-item p {
+    margin-top: 10px;
+}
+
+.contact-container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+background: white;
+border: 1px solid #75a8d1; /* Optional: Add a border for more defined edges */
+margin: 0 auto; /* Center the container within its parent */
+max-width: 1170px; /* Adjust the maximum width as needed */
+min-height: 300px; /* Set a minimum height as needed */
+padding: 45px 20px;
+}
+  
+.contact-form-content {
+flex: 2; /* Increase the flex value to make it take more space */
+padding: 20px;
+font-family: "arial", sans-serif;
+font-size: 17px;
+max-width: 400px;
+}
+.contact-form form {
+max-width: 400px;
+box-shadow: 0 4px 8px rgb(151, 193, 240); /* Change this to your desired shadow color */
+padding: 20px 80px;
+border-radius: 8px; /* Adjust the border radius as needed */
+border: 1px solid white; /* Optional: Add a border for more defined edges */
+margin-right: 5%;
+
+}
+
+.contact-form h3 {
+font-size: 24px;
+margin-bottom: 10px;
+margin-top: -10px; /* Adjust this value as needed to move the heading up */
+
+
+}
+.contact-form h4 {
+font-size: 24px;
+margin-top: 10px; /* Adjust this value as needed to move the heading up */
+margin-left: 5%;
+margin-bottom: 0%;
+
+
+}
+.contact-form h5 {
+font-size: 24px;
+margin-top: 30px; /* Adjust this value as needed to move the heading up */
+margin-left: 5%;
+margin-bottom: 4%;
+
+
+}
+.contact-form-text {
+margin-right: 15%;
+justify-content: center;
+flex: 1;
+padding: 10px 50px; /* Increased padding to add height */
+max-width: 70%; /* Ensure the text and image each take up to 50% of the container's width */
+line-height: 1.5; /* Adjust this value to increase line spacing */
+}        
+
+
+.contact-form-text p {
+    color: #777;
+    margin-bottom: 1em;
+}
+
+.contact-form-text ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 5%;
+    align-items: center;
+    text-align: left;
+    
+}
+
+.contact-form-text ul li {
+    display: flex;
+    align-items: left;
+    margin-bottom: 0.5em;
+    margin-right: 10px;
+   
+    line-height: 1.5; 
+}
+
+
+.contact-form-text ul li .icon {
+    margin-right: 0.5em;
+    font-size: 1.0em;
+    white-space: nowrap; /* Prevent line breaks within the span */
+}
+.contact-form input, .contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #244A91;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #575757;
+}
+.button-container {
+display: flex;
+justify-content: center;
+width: 100%;
+}
+
+.submit-button {
+padding: 10px 20px;
+background-color: #333;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+.submit-button:hover {
+background-color: #575757;
+}
+
+footer {
+    background-color: #333;
+    
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
