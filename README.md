@@ -8,4 +8,4 @@ This project emphasizes creativity, layout design, and attention to detail to en
 
 * Projects section provides detailed insights into the various undertakings that highlight our capabilities in construction, design, and project management. 
 
-* Contact Us section of DreamCraft is designed to make it easy for you to get in touch with us for any inquiries, consultations, or project discussions. 
+* Contact Us section of DreamCraft is designed to make it easy for you to get in touch with us for any inquiries, consultations, or project discussions.
